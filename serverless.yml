@@ -16,12 +16,13 @@ service: mercury
 provider:
   name: aws
   runtime: nodejs12.x
+  apiKeys:
+    - qrEvFfB8ssScNBbPjRx5rYU6caUAPQVk86wueqjA
   # If you want to change to a different AWS profile
   # from ~/.aws/credentials, you can do so here
   profile: default
-  # you can overwrite defaults here
-  #  stage: dev
-  #  region: us-east-1
+  stage: prod
+  region: us-east-2
 
 custom:
   webpack:
